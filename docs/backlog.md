@@ -2,6 +2,7 @@
 | :----:        |    :----:   |          :----: |
 | Como cliente, eu quero      | acessar uma página<br>com informações gerais do produto       | para poder decidir se vou contratar o serviço.   |
 | Como usuário, eu quero   | ter acesso privado ao sistema        | para sentir confiança na privacidade<br>de meus dados e pedidos.      |
+| Como desenvolvedor, eu preciso | de uma logo | para o reconhecimento da plataforma. |
 | Como usuário, eu quero | uma plataforma que ofereça praticidade<br>e simplicidade | para facilitar a cotação de serviços. |
 | Como cliente, eu quero | uma pagina inicial | para navegar e criar um cadastro<br>dentro do site. |
 | Como usuário, eu quero | uma forma de conferir se o site é confiável | para poder enviar ou receber projetos. |
