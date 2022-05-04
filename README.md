@@ -14,5 +14,5 @@ para solicitar cotação de preços e oferecer prestação de serviços.
 ## Professores responsáveis
 
 * João Caram Santos de Oliveira
-* Marta
+* Marta Noronha
 
