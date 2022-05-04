@@ -9,11 +9,10 @@ para solicitar cotação de preços e oferecer prestação de serviços.
 * Miguel Henrique Martins Carvalho
 * Bruno Silvério Madureira
 * Henrique Costa Marques
-* Nome completo do aluno 4
-* Nome completo do aluno 4
+* Felipe Cardoso
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* João Caram Santos de Oliveira
+* Marta
 
