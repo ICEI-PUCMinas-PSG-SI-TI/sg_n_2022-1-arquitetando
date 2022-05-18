@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
@@ -8,6 +8,25 @@
     <link
         href="entrar.css"
         rel="stylesheet" type="text/css">
+        <title>Arquitetando - Entrar</title>
+
+
+        <script>
+            onload = () => {
+                let u;
+
+                if((u = localStorage.getItem('user'))) nome.value = JSON.parse(u).nome;
+
+
+                login.onsubmit = (evento) =>{
+                let user = { nome: nome.value, senha: password.value };
+                    localStorage.setItem('user', JSON.stringify(user));
+                   evento.preventDefault();
+
+
+                };
+            };
+        </script>
         
 </head>
 
@@ -41,12 +60,13 @@
         <div class="area-cadastro">
             <h2 class="cadastro-titulo">Faça Seu Login</h2>
             <div class="cadastro-form w-form">
-                <form id="wf-form-Dados-Form" name="wf-form-Dados-Form" data-name="Dados Form" redirect="perfil.html"
-                    data-redirect="perfil.html" method="get" aria-label="Dados Form"><label
-                        for="name">Nome</label><input type="text" class="input-field w-input" maxlength="256"
-                        name="name" data-name="Name" placeholder="Nome Completo" id="name"><label for="email-2">Senha
-                    </label><input type="email" class="input-field w-input" maxlength="256" name="email-2"
-                        data-name="Email 2" placeholder="Senha" id="email-2" required=""><select id="Cadastro-escolha"
+                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" redirect="#"
+                    data-redirect="#" method="post" action="https://postman-echo.com/post" aria-label="Dados Form"><label
+                        for="nome">Nome</label><input type="text" class="input-field w-input" maxlength="256"
+                        name="nome" data-name="Name" placeholder="Nome Completo" id="nome">
+                        <label for="password">Senha
+                    </label><input type="password" class="input-field w-input" maxlength="256" name="password"
+                        data-name="password" placeholder="Senha" id="password" required=""><select id="Cadastro-escolha"
                         name="Cadastro-escolha" data-name="Cadastro-escolha" class="select-field w-select">
                         <option value="">Escolha o seu tipo de conta </option>
                         <option value="First">Arquitetos</option>
