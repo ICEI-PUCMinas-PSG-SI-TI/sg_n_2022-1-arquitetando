@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta property="og:type" content="website">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen:regular,700,800" media="all">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="normalize.css" rel="stylesheet">
     <link href="Smooth.css" rel="stylesheet">
     <link
         href="entrar.css"
@@ -21,7 +23,6 @@
                 login.onsubmit = (evento) =>{
                 let user = { nome: nome.value, senha: password.value };
                     localStorage.setItem('user', JSON.stringify(user));
-                   evento.preventDefault();
 
 
                 };
@@ -37,11 +38,11 @@
             <div class="container">
                 <div class="nav-wrapper"><a href="/" aria-current="page" class="brand w-nav-brand w--current"
                         aria-label="home"><img
-                            src="https://uploads-ssl.webflow.com/627eb1ccb96d0677fc264dd0/627eb1cdb96d06f351264e0f_logo.svg"
-                            alt="Acme Outdoors Logo"></a>
+                            src="/images/Sem nome (130 × 40 px).png"
+                            alt="Arquitetando - Logo"></a>
                     <div class="cart-nav-wrapper">
                         <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" aria-current="page"
-                                class="nav-link w-nav-link w--current">Home</a><a href="#"
+                                class="nav-link w-nav-link w--current">Home</a><a href="sobre.html"
                                 class="nav-link w-nav-link">Sobre</a><a href="cadastro.html"
                                 class="nav-link w-nav-link">Cadastre-se</a><a href="entrar.html"
                                 class="nav-link w-nav-link">Entrar</a></nav>
@@ -60,19 +61,17 @@
         <div class="area-cadastro">
             <h2 class="cadastro-titulo">Faça Seu Login</h2>
             <div class="cadastro-form w-form">
-                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" redirect="#"
-                    data-redirect="#" method="post" action="https://postman-echo.com/post" aria-label="Dados Form"><label
+                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" action="perfil.html"
+                    data-redirect="perfil.html" method="post" action="https://postman-echo.com/post" aria-label="Dados Form"><label
                         for="nome">Nome</label><input type="text" class="input-field w-input" maxlength="256"
                         name="nome" data-name="Name" placeholder="Nome Completo" id="nome">
                         <label for="password">Senha
                     </label><input type="password" class="input-field w-input" maxlength="256" name="password"
-                        data-name="password" placeholder="Senha" id="password" required=""><select id="Cadastro-escolha"
-                        name="Cadastro-escolha" data-name="Cadastro-escolha" class="select-field w-select">
-                        <option value="">Escolha o seu tipo de conta </option>
-                        <option value="First">Arquitetos</option>
-                        <option value="Second">Prestador</option>
+                        data-name="password" placeholder="Senha" id="password" required="">
                     </select><input type="submit" value="Enviar" data-wait="Please wait..."
                         class="button primary w-button"></form>
+                        <h3>Ainda não tem uma conta?</h3>
+                        <h3 ><a id="cadastro-link" href="cadastro.html">Cadastre-se Agora</a></h3>
                 <div class="sucess-message w-form-done" tabindex="-1" role="region" aria-label="Dados Form success">
                     <div>Seu cadastro foi recebido!</div>
                     <h3>Obrigado!</h3>
@@ -87,8 +86,8 @@
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-logo-column"><a href="/" aria-current="page" class="w-inline-block w--current"><img
-                            src="https://uploads-ssl.webflow.com/627eb1ccb96d0677fc264dd0/627eb1cdb96d06f351264e0f_logo.svg"
-                            alt="Acme Outdoors Logo"></a></div>
+                            src="/images/Sem nome (130 × 40 px).png"
+                            alt="Arquitetando - Logo"></a></div>
                 <div><a href="https://twitter.com/webflow" target="_blank"
                         class="social-footer-link w-inline-block"><img
                             src="https://uploads-ssl.webflow.com/627eb1ccb96d0677fc264dd0/627eb1cdb96d063243264e27_Twitter_Social_Icon_Rounded_Square_White.svg"
