@@ -270,14 +270,18 @@
       }
       #cadastro-link{
         color: #222;
-        justify-content: center;
+        
       }
       #cadastro-link:hover{
         color:red
       }
+     .h3-margin{
+         margin-left: 100px;
+     } 
+     #cadastro-link{
+        padding-left: 42px;
       
-      
-      
+     }
       
       @media screen and (max-width: 991px) {
         .container {
