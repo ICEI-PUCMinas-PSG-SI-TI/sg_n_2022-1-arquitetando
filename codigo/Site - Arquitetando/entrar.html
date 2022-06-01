@@ -8,23 +8,14 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="Smooth.css" rel="stylesheet">
     <link href="entrar.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
     <title>Arquitetando - Entrar</title>
 
 
     <script>
-        onload = () => {
-            let u;
-
-            if ((u = localStorage.getItem('user'))) nome.value = JSON.parse(u).nome;
 
 
-            login.onsubmit = (evento) => {
-                let user = { nome: nome.value, senha: password.value };
-                localStorage.setItem('user', JSON.stringify(user));
 
-
-            };
-        };
     </script>
 
 </head>
@@ -56,13 +47,13 @@
         <div class="area-cadastro">
             <h2 class="cadastro-titulo">Faça Seu Login</h2>
             <div class="cadastro-form w-form">
-                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" action="perfil.html"
-                    data-redirect="perfil.html" method="post" action="https://postman-echo.com/post"
-                    aria-label="Dados Form"><label for="nome">Nome</label><input type="text" class="input-field w-input"
-                        maxlength="256" name="nome" data-name="Name" placeholder="Nome Completo" id="nome">
+                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" action="#" onsubmit="signIn(event)"
+                    aria-label="Dados Form"><label for="email">Email</label><input type="text"
+                        class="input-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email"
+                        id="email">
                     <label for="password">Senha
-                    </label><input type="password" class="input-field w-input" maxlength="256" name="password"
-                        data-name="password" placeholder="Senha" id="password" required="">
+                    </label><input type="password" class="input-field w-input" maxlength="256" name="pwd"
+                        placeholder="Senha" id="pwd" required="">
                     </select><input type="submit" value="Enviar" data-wait="Please wait..."
                         class="button primary w-button">
                 </form>
