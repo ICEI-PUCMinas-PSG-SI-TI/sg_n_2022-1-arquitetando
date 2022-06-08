@@ -24,7 +24,7 @@ function loginUser() {
         })
         if (matchedUser.length) {
             alert('Login successful');
-            window.location('entrar.html');
+            
     
         } else {
             alert("Login Incorreto")
