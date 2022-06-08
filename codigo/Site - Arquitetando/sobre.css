@@ -340,6 +340,12 @@
      -ms-flex-pack: end;
      justify-content: flex-end;
    }
+   #contact .backgroud-contact{
+     background-color: rgba(0,0,0,0.2);
+     width: 100%;
+     border:solid 5px rgba(0,0,0,0.1);
+     margin-bottom: -66px;
+   }
    
    .contact-image-div {
      width: 45%;
