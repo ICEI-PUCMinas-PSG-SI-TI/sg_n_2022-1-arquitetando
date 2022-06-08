@@ -11,6 +11,8 @@
     <script type="text/javascript" src="main.js"></script>
     <title>Arquitetando - Entrar</title>
 
+
+
 </head>
 
 <body>
@@ -39,8 +41,9 @@
     <main id="cadastro" class="cadastro wf-section">
         <div class="area-cadastro">
             <h2 class="cadastro-titulo">Faça Seu Login</h2>
+            <h3>Entre agora na sua conta!</h3>
             <div class="cadastro-form w-form">
-                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" action="#" onsubmit="signIn(event)"
+                <form id="login" name="wf-form-Dados-Form" data-name="Dados Form" action="#" onsubmit="loginUser()" method="post"
                     aria-label="Dados Form"><label for="email">Email</label><input type="text"
                         class="input-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email"
                         id="email">
