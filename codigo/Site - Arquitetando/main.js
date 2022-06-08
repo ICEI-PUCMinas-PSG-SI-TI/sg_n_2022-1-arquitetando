@@ -11,7 +11,7 @@ function UserRegistration() {
     localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
     alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
     window.location.reload();
-    window.location.redirect('perfil.html');
+  
 }
 
 function loginUser() {
