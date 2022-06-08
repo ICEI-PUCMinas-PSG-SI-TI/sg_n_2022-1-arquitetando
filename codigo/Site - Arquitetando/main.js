@@ -11,7 +11,7 @@ function UserRegistration() {
     localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
     alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
     window.location.reload();
-    location.href = "entrar.html";
+    window.location.redirect('perfil.html');
 }
 
 function loginUser() {
@@ -24,11 +24,11 @@ function loginUser() {
         })
         if (matchedUser.length) {
             alert('Login successful');
-            window.location.replace('perfil.html');
+    
         } else {
             alert("Login Incorreto")
         }
     } else {
-        console.log('Wrong credentials') // Don't say "Not a registered user"
+        console.log('Credenciais erradas') 
     }
 }
