@@ -11,7 +11,7 @@ function UserRegistration() {
     localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
     alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
     window.location.reload();
-  
+   
 }
 
 function loginUser() {
@@ -24,6 +24,7 @@ function loginUser() {
         })
         if (matchedUser.length) {
             alert('Login successful');
+            window.location('entrar.html');
     
         } else {
             alert("Login Incorreto")
