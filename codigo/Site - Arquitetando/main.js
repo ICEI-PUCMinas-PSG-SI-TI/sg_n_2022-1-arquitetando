@@ -1,40 +1,34 @@
-const signUp = e => {
-    let nome = document.getElementById('nome').value,
-        email = document.getElementById('email').value,
-        pwd = document.getElementById('pwd').value;
 
-    let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
-    let exist = formData.length && 
-        JSON.parse(localStorage.getItem('formData')).some(data => 
-            data.email.toLowerCase() == email.value.toLowerCase() 
-        );
+function UserRegistration() {
+    let storedUsers = localStorage.UsersLogin ? JSON.parse(localStorage.UsersLogin) : [];
+    const userData = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        password: document.getElementById('pwd').value
+    };
+    storedUsers.push(userData);
+    localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
+    alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
+    window.location.reload();
+    location.href = "entrar.html";
+}
 
-    if(!exist){
-        formData.push = ({ nome, email, pwd });
-        localStorage.setItem('formData', JSON.stringify(formData));
-        document.querySelector('form').reset();
-        document.getElementById('email').focus();
-        alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
-        location.href = "entrar.html";
+function loginUser() {
+    const loginEmail = document.getElementById('email').value
+    const loginPass = document.getElementById('pwd').value
+    if (localStorage.getItem('UsersLogin')) {
+        const allStoredUsers = JSON.parse(localStorage.getItem('UsersLogin'));
+        const matchedUser = allStoredUsers.filter(user => {
+            return loginEmail === user.email && loginPass === user.password;
+        })
+        if (matchedUser.length) {
+            alert('Login successful');
+            window.location.replace('perfil.html');
+        } else {
+            alert("Login Incorreto")
+        }
+    } else {
+        console.log('Wrong credentials') // Don't say "Not a registered user"
     }
-    else{
-        alert("ERRO!! Conta ja criada");
-    }
-    e.preventDefault();
-};
-
-
-function signIn(e) {
-    let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
-    let formData = JSON.parse(localStorage.getItem('formData')) || [];
-    let exist = formData.length && 
-    JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email.value && data.pwd.toLowerCase() == pwd.value);
-    if(!exist){
-        alert("Login Incorreto");
-    }
-    else{
-        location.href = "perfil.html";
-    }
-    e.preventDefault();
 }
