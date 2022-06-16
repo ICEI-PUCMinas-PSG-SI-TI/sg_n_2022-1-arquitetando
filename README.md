@@ -16,3 +16,6 @@ para solicitar cotação de preços e oferecer prestação de serviços.
 * João Caram Santos de Oliveira
 * Marta Noronha
 
+## Link Kanban
+* https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/projects/1
+* 
