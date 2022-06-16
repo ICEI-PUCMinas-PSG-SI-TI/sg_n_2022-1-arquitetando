@@ -18,4 +18,4 @@ para solicitar cotação de preços e oferecer prestação de serviços.
 
 ## Link Kanban
 * https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/projects/1
-* 
+
