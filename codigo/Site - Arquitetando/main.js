@@ -24,8 +24,8 @@ function loginUser() {
         })
         if (matchedUser.length) {
             alert('Login successful');
+            window.location.href = "perfil.html";
             
-    
         } else {
             alert("Login Incorreto")
         }
