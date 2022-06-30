@@ -10,14 +10,14 @@ function UserRegistration() {
     storedUsers.push(userData);
     localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
     alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
-    window.location.reload();
+    getElementById('login').action = "entrar.html";
    
 }
 
 function loginUser() {
     const loginEmail = document.getElementById('email').value
     const loginPass = document.getElementById('pwd').value
-    if (localStorage.getItem('UsersLogin')) {
+    if (localStorage.getItem('UsersLogin')) {   
         const allStoredUsers = JSON.parse(localStorage.getItem('UsersLogin'));
         const matchedUser = allStoredUsers.filter(user => {
             return loginEmail === user.email && loginPass === user.password;

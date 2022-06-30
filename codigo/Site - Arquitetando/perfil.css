@@ -1068,6 +1068,7 @@ blockquote {
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
+     margin-left: 20px;
      margin-bottom: 4px;
      color: #000;
      font-weight: 600;
@@ -1124,8 +1125,8 @@ blockquote {
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     width: 48px;
-     height: 48px;
+     width: 75px;
+     height: 75px;
      -webkit-box-pack: center;
      -webkit-justify-content: center;
      -ms-flex-pack: center;
@@ -1660,3 +1661,11 @@ blockquote {
      font-display: auto;
    }
    #more {display: none;}
+
+   .font-size--xs{
+    margin-left: 20px;
+   }
+
+   .subtext{
+    margin-left: 20px;
+   }
