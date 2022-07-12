@@ -55,9 +55,13 @@
                     <label for="password" id="labelSenha">Senha
                     </label>
                     <input type="password" class="input-field w-input" maxlength="256" name="pwd"
-                       placeholder="Senha" id="pwd" required="">
+                       placeholder="Senha" id="pwd" required="" onkeyup="check()">
+                       <label for="password" id="labelSenha">Confirmar senha  <span id='message'></span>
+                    </label>
+                    <input type="password" class="input-field w-input" maxlength="256" 
+                       placeholder="Confirma Senha" id="confirm_password" required="" name="confirm_password" onkeyup="check()">
                     <select id="Cadastro-escolha" name="Cadastro-escolha" data-name="Cadastro-escolha"
-                        class="select-field w-select">
+                        class="select-field w-select" id="dropdown">
                         <option value="">Escolha o seu tipo de conta </option>
                         <option value="First">Arquitetos</option>
                         <option value="Second">Prestador</option>
