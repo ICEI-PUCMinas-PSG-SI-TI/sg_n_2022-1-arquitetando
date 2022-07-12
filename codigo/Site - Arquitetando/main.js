@@ -1,17 +1,31 @@
 
 
+var check = function() {
+    if (document.getElementById('pwd').value ==
+      document.getElementById('confirm_password').value) {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = 'Senha Correta';
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'Senha Incorreta';
+    }
+  }
+
 function UserRegistration() {
     let storedUsers = localStorage.UsersLogin ? JSON.parse(localStorage.UsersLogin) : [];
+    
     const userData = {
         nome: document.getElementById('nome').value,
         email: document.getElementById('email').value,
-        password: document.getElementById('pwd').value
+        password: document.getElementById('pwd').value,
+        categoria: document.getElementById('dropdown').value
     };
     storedUsers.push(userData);
     localStorage.setItem('UsersLogin', JSON.stringify(storedUsers));
     alert("Conta Cadastrada\n\nPor favor faca seu login agora.");
     getElementById('login').action = "entrar.html";
    
+    
 }
 
 function loginUser() {
@@ -24,8 +38,8 @@ function loginUser() {
         })
         if (matchedUser.length) {
             alert('Login successful');
-            window.location.href = "perfil.html";
-            
+            window.location.href="perfil.html";
+            return true;
         } else {
             alert("Login Incorreto")
         }
