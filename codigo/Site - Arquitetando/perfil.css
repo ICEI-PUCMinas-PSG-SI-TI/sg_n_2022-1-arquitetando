@@ -1670,3 +1670,8 @@ blockquote {
    .subtext{
     margin-left: 20px;
    }
+
+   #myBtn{
+    margin-left: 25px;
+    margin-bottom: 20px;
+   }
