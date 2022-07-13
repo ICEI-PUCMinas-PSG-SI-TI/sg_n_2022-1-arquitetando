@@ -11,3 +11,5 @@ Inclua aqui os arquivos utilizados no processo de concepção segundo o _design 
 [Pesquisa de Campo - Designer Interiores e Arquiteto.pdf](https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/files/9057095/Pesquisa.de.Campo.-.Designer.Interiores.e.Arquiteto.pdf)
 
 [Pesquisa de Campo - Empresa Planejados.pdf](https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/files/9057097/Pesquisa.de.Campo.-.Empresa.Planejados.pdf)
+
+[Uploading Apresentação Final.pptx…]()
