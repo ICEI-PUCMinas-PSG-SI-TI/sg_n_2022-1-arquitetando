@@ -108,7 +108,8 @@ blockquote {
 }
 
 .social-footer-link {
-  margin-right:25px;
+  margin-right:10px;
+  margin-left: 10px;
   width: 30px;
 }
 
