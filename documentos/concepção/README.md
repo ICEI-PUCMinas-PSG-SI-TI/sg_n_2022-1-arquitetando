@@ -14,5 +14,5 @@ Inclua aqui os arquivos utilizados no processo de concepção segundo o _design 
 
 [Apresentação Final.pptx](https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/files/9106826/Apresentacao.Final.pptx)
 
-Link para acesso ao vídeo de apresentação: https://youtu.be/7pjRSLegGNc ![image](https://user-images.githubusercontent.com/104520144/178858033-b91da370-7440-4693-a4b1-ad02aab02cf6.png)
+Link para acesso ao vídeo de apresentação: https://youtu.be/7pjRSLegGNc 
 
