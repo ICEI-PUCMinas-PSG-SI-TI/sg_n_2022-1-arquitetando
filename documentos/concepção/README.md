@@ -12,5 +12,4 @@ Inclua aqui os arquivos utilizados no processo de concepção segundo o _design 
 
 [Pesquisa de Campo - Empresa Planejados.pdf](https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/files/9057097/Pesquisa.de.Campo.-.Empresa.Planejados.pdf)
 
-
-[Apresentação Final.pptx…]()
+[Apresentação Final.pptx](https://github.com/ICEI-PUCMinas-PSG-SI-TI/sg_n_2022-1-arquitetando/files/9106826/Apresentacao.Final.pptx)
